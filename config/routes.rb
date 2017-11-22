@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :users, only: [:new, :create, :show]
+  resources :users, only: [:create, :show]
+  resources :sessions, only: [:create]
+
+  get 'login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+  get 'register', to: 'users#new', as: 'register'
 
   root 'games#index'
 
