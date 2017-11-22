@@ -15,13 +15,11 @@ ActiveRecord::Schema.define(version: 20171122193207) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "friendings", id: false, force: :cascade do |t|
-    t.integer "requester_id"
-    t.integer "acceptor_id"
+  create_table "friendings", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "friend_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["acceptor_id", "requester_id"], name: "index_friendings_on_acceptor_id_and_requester_id", unique: true
-    t.index ["requester_id", "acceptor_id"], name: "index_friendings_on_requester_id_and_acceptor_id", unique: true
   end
 
   create_table "gamables", force: :cascade do |t|
