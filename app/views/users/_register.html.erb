@@ -1,0 +1,9 @@
+<% if @errors %>
+    <%= render 'shared/errors' %>
+  <% end %>
+
+  <%= form_with model: @user, class: "js--register" do |f| %>
+    <%= f.text_field :username, placeholder: "Username"  %>
+    <%= f.password_field :password, placeholder: "Password"  %><br>
+    <%= f.submit "Register" %>
+  <% end %>
