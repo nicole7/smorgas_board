@@ -2,6 +2,12 @@ class SessionsController < ApplicationController
 
   def new
     @user = User.new
+
+    respond_to do |f|
+      f.js
+      f.html
+    end
+
   end
 
   def create

@@ -17,8 +17,8 @@
         <%= link_to "Sup, #{@current_user.username}?" %>
         <%= link_to "Logout", logout_path %>
       <% else %>
-        <%= link_to "Login", login_path %>
-        <%= link_to "Register", register_path %>
+        <%= link_to "Login", login_path, remote: true, class: "js--login-link" %>
+        <%= link_to "Register", register_path, remote: true, class: "js--register-link" %>
       <% end %>
     </nav>
 
