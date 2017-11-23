@@ -31,6 +31,12 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# may need one or more of these for api calls
+# gem 'net/http'
+# gem 'open-uri'
+gem 'nokogiri'
+# gem 'bgg-parser', '~> 0.0.5'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
