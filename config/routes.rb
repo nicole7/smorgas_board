@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
+
   resources :users, only: [:create, :show]
   resources :sessions, only: [:create]
+  resources :games
 
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
