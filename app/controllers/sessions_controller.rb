@@ -13,6 +13,11 @@ class SessionsController < ApplicationController
   def create
     @user = User.find_by(params[:email])
 
+    respond_to do |f|
+      f.js
+      f.html
+    end
+
     if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
       redirect_to root_path
