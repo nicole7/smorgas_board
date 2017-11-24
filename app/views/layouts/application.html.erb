@@ -14,16 +14,23 @@
       <%= link_to "Home", root_path %>
       <% if current_user %>
       <!-- Remember to add a path here to user profile page. -->
-        <%= render './logged_in_links' %>
+
+        <%= link_to "Sup, #{@current_user.username}?", user_path(current_user) %>
+        <%= link_to "Logout", logout_path %>
+
       <% else %>
         <%= render './logged_out_links' %>
         <%= render 'shared/flash' if flash[:notice] %>
       <% end %>
+      <% if !logged_in? %>
+      <div class="sidebar-box box" id="friends-info">
+      </div>
+      <% else %>
+      <div class="box" id="friends-info"> Where friend list goes
+      </div>
+      <% end %>
     </nav>
 
-<!--     <div class="wrapper">
-      <div class="box b">B</div>
-    </div> -->
     <%= yield %>
   </body>
 </html>

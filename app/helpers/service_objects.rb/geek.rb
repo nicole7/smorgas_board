@@ -1,4 +1,4 @@
-class Geek < ApplicationRecord
+class Geek
 
   # def get_api_response(keyword)
   # use this url to get a game by keyword
@@ -13,7 +13,7 @@ class Geek < ApplicationRecord
   #   result = JSON.parse(h)
   #   result["boardgames"]["boardgame"][0]["name"]
   # end
-# end
+end
 
 
 # braille scrabble:
