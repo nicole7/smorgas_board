@@ -62,7 +62,7 @@ letter-spacing: 2.5px;
     background-image: url("http://i.imgur.com/y6QSZUml.jpg");
     background-size: cover;
     background-position: center;
-    width: 200px;
+    width: 300px;
     height: 700px;
 }
 
@@ -71,15 +71,17 @@ letter-spacing: 2.5px;
 }
 
 .friends {
+    color: white;
     position: fixed;
     padding: 0;
     margin: 0;
     right: 0;
-    width: 200px;
+    width: 300px;
     height: 700px;
-    background-color: #444;
+    background-color: #006622;
 }
 
+/*color: #388c3f;*/
 
     .game-info {
         /*grid-column: 1 / 3;*/

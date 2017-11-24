@@ -6,8 +6,8 @@
 
         <h4 class="requester_info"> <%= link_to request.user.name, user_path(request.user) %> wants to be your friend.</h4>
           <div class="btns">
-            <%= link_to 'Accept', friend_request_path(request.id), method: :patch, class: 'add_button' %>
-            <%= link_to 'Decline', friend_request_path(request.id), method: :delete, class: 'decline_button' %>
+            <%= link_to 'Accept', request_path(request), method: :patch, class: 'add_button' %>
+            <%= link_to 'Decline', request_path(request), method: :delete, class: 'decline_button' %>
           </div>
         <% end %>
   <% else %>

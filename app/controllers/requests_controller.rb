@@ -1,5 +1,5 @@
 class RequestsController < ApplicationController
-
+  include SessionsHelper
   before_action :set_friend_request, except: [:index, :create]
 
   def index
@@ -16,7 +16,7 @@ class RequestsController < ApplicationController
     else
       flash[:danger] = 'Friend request could not be sent.'
     end
-    redirect_to root_path
+    redirect_to user_path(current_user)
   end
 
   def update

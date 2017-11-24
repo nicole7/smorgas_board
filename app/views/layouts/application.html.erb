@@ -27,10 +27,11 @@
       </div>
     <% else %>
       <div class="friends">
-      <h3><u>Pending requests:</u></h3>
+      <h3><u><center>Pending requests:</center></u></h3>
         <%= render "requests/received", @received %>
-      <h3><u>Sent Requests:</u></h3>
+      <h3><u><center>Sent Requests:</center></u></h3>
         <%= render "requests/sent", @sent %>
+        <h3><u><center><%= link_to "User List", users_path %></center></u></h3>
     </div>
    <% end %>
 
