@@ -21,8 +21,11 @@
       <% else %>
         <%= render './logged_out_links' %>
       <% end %>
-      <% if !current_user %>
+      <% if !logged_in? %>
       <div class="sidebar-box box" id="friends-info">
+      </div>
+      <% else %>
+      <div class="box" id="friends-info"> Where friend list goes
       </div>
       <% end %>
     </nav>
