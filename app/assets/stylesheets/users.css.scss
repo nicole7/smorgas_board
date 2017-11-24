@@ -14,17 +14,41 @@ nav a {
 .js--login {
   float: right;
   padding-right: 20px;
+  display: inline;
 }
 
 .js--register {
   float: right;
   padding-right: 20px;
+  display: inline;
 }
 
 .errors {
-  margin-top: 30px;
+  display: inline;
   float: right;
-  list-style-type: none;
+  margin-right: 25px;
 }
+
+.notice {
+  display: inline;
+  float: right;
+  padding-right: 20px;
+  margin-right: 20px;
+  text-align: center;
+  width: 170px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  -webkit-animation: cssAnimation 0s ease-in 1s forwards;
+}
+
+@-webkit-keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
 
 

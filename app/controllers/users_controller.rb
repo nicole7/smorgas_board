@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 
     if @user.save
       session[:user_id] = @user.id
+      flash[:notice] = "Registration successful!"
       if request.xhr?
         render :create
       else

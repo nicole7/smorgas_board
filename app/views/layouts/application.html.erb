@@ -17,6 +17,7 @@
         <%= render './logged_in_links' %>
       <% else %>
         <%= render './logged_out_links' %>
+        <%= render 'shared/flash' if flash[:notice] %>
       <% end %>
     </nav>
 
