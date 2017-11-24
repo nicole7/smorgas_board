@@ -28,8 +28,13 @@
       <div class="sidebar-box">
       </div>
     <% else %>
-      <div class="friends">Where friend list goes</div>
-    <% end %>
+      <div class="friends">
+      <h3><u>Pending requests:</u></h3>
+        <%= render "requests/received", @received %>
+      <h3><u>Sent Requests:</u></h3>
+        <%= render "requests/sent", @sent %>
+    </div>
+   <% end %>
 
     <%= yield %>
   </body>

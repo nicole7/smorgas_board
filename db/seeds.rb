@@ -1,46 +1,34 @@
+
+  # def get_api_response(keyword)
+  # use this url to get a game by keyword
+  #   url = "https://www.boardgamegeek.com/xmlapi/search?search=#{keyword}"
+
+  # use this url to get a game by id
+  # url = https://www.boardgamegeek.com/xmlapi/boardgame/69972?stats=1
+
+  #   response = Net::HTTP.get_response(URI.parse(url))
+  #   buffer = response.body
+  #   h = Hash.from_xml(buffer).to_json
+  #   result = JSON.parse(h)
+  #   result["boardgames"]["boardgame"][0]["name"]
+  # end
+
+# braille scrabble:
+# https://www.boardgamegeek.com/xmlapi/search?search=scrabble
+# https://www.boardgamegeek.com/xmlapi/boardgame/69972?stats=1
+
+
+
+10.times do 
+  User.create!(username: Faker::LeagueOfLegends.champion, password: "password")
+end
+
 # Hard-coded games for testing and view building
 Game.create!(name: "Monopoly", description: "Theme<br/>Players take the part of land owners, attempting to buy and then develop their land. Income is gained by other players visiting their properties and money is spent when they visit properties belonging to other players. When times get tough, players may have to mortgage their properties to raise cash for fines, taxes and other misfortunes.<br/><br/>Gameplay<br/>On his turn, a player rolls two dice and moves that number of spaces around the board. If the player lands on an as-yet-unowned property, he has the opportunity to buy it and add it to his portfolio or allow the bank to auction it to the highest bidder. If a player owns all the spaces within a color group, he may then build houses and hotels on these spaces, generating even more income from opponents who land there. If he lands on a property owned by another player, he must pay that player rent according to the value of the land and any buildings on it. There are other places on the board which can not be bought, but instead require the player to draw a card and perform the action on the card, pay taxes, collect income, or even go to jail.<br/><br/>Goal<br/>The goal of the game is to be the last player remaining with any money.<br/><br/>Cultural impact on rules<br/>Monopoly is unusual in that the game has official, printed rules, but most players learn how to play from others, never actually learning the correct way to play. This has led to the canonization of a number of house rules that make the game more palatable to children (and sore losers) but harm the gameplay by preventing players from going bankrupt or slowing down the rate of property acquisition. One common house rule has players put any money paid to the bank in the center of the board, which jackpot a player may earn by landing on Free Parking. This prevents the game from removing money from play, and since players collect $200 each time they pass Go, this results in ever-increasing bankrolls and players surviving rents that should have bankrupted them. Another house rule allows players to take &quot;loans&quot; from the bank instead of going bankrupt, which means the game will never end. Some house rules arise out of ignorance rather than attempts to improve the game. For instance, many players don't know that properties landed on but left unbought go up for auction, and even some that know to auction don't know that the bidding starts at $1, meaning a player may pay well below the listed price for an auctioned property.<br/><br/>Background<br/>In the USA in 1933, Charles Darrow devised Monopoly based on an earlier game by Elizabeth J. Magie. The patent was filed 31st August 1935 while the game was on sale in America. Based on an earlier game, The Landlord's Game, it was at first rejected by Parker Bros., as being too complicated to be a success. How wrong could they be! It came to the UK in 1936, made under licence by Waddingtons. Darrow died in 1967 having realised he had developed one of the most successful board games of all times. It was awarded as Game of the Century by the TRA (Toy Retailers Association).<br/><br/>Monopoly was patented in 1935 by Charles Darrow and released by Parker Brothers. The game was actually one of a number of variants in existence at the time, all of which date back to an earlier, 1904 game by Elizabeth J. Magie called The Landlord's Game. Magie was a proponent of the Single Tax put forth by famous author Henry George.  The game was designed to show the evils of earning money from renting land (as it leads to the destitution of all but one player) and the virtues of the proposed Single Tax - players could choose to play under regular rules or alternate &quot;Single Tax&quot; rules.<br/><br/>The game didn't really go anywhere and Magie lost interest in it. Variations of the game evolved, however, and homemade versions traveled up and down the Atlantic coast and even as far west as Michigan and Texas, being developed all along the way. Eventually the game was noticed by Charles Darrow, who introduced it to the world in its current form.<br/><br/>Re-implements:<br/><br/>    The Landlord's Game<br/><br/><br/><br/><br/>Expanded by:<br/>Official<br/><br/>    Monopoly Stock Exchange Add-on<br/>    Monopoly Free Parking Mini Game<br/>    Monopoly Get Out of Jail Mini Game<br/><br/><br/><br/><br/>Unofficial<br/><br/>    Super Add-ons: Monopoly<br/>    Entrepreneur's Accessory to Monopoly<br/>    Game Spice: Monopoly Expansion<br/>    Mafiopoly<br/>    Monopoly: Mob Rule Expansion Deck<br/>    Final Fantasy Monopoly<br/><br/><br/><br/><br/>", category: "family", player_num: "2-8", playing_time: "180", year_created: "1933", image_url: "https://cf.geekdo-images.com/images/pic3640835.jpg")
 
 Game.create!(name: "The Game of Life: My Little Pony", description: "Spring had sprung in Equestria. As the days grew longer and the weather grew hotter, Princess Celestia realized it was getting closer and closer to the Summer Sun Celebration. But there was so much to prepare in Equestria! So, she did what any good leader would do: she delegated! And now you and your friends can play as Ponies as you help prepare Equestria for the party in My Little Pony Game of Life.<br/><br/>My Little Pony Game of Life sets players on a course preparing Equestria, but also learning the importance of friendship. You'll gain friends and earn Friendship Points, which will help you overcome obstacles, find supplies for the celebration, and get back to Ponyville in enough time to party down. Plus, you get four collectible Pony pieces, different from (but in the same scale as) the pieces in My Little Pony Monopoly (so all the Ponies can play together). My Little Pony Game of Life proves that the most important things in life are the friends you make along your journey through it. Awwww.<br/><br/>", category: "Children's Game", player_num: "2-4", playing_time: "60", year_created: "2014", image_url: "https://cf.geekdo-images.com/images/pic2769715.jpg")
 
-# require 'net/http'
-#   # def get_api_response(keyword)
-#   # use this url to get a game by keyword
-#   #   url = "https://www.boardgamegeek.com/xmlapi/search?search=#{keyword}"
 
-#   # use this url to get a game by id
-#   # url = "https://www.boardgamegeek.com/xmlapi/boardgame/69972?stats=1"
-
-#     # response = Net::HTTP.get_response(URI.parse(url))
-#     # buffer = response.body
-#     # h = Hash.from_xml(buffer).to_json
-#     # result = JSON.parse(h)
-
-#   #   result["boardgames"]["boardgame"][0]["name"]
-#   # end
-
-
-
-
-# monopoly_id = 1406
-# sorry_id = 2407
-# scrabble_id = 320
-# candyland_id = 5048
-# life_id = 169714
-# buffy_id = 7822
-# risk_id = 2331
-# scattergories_id = 2381
-# card_against_humanity_id = 50381
-# apples_to_apples_id = 74
-# battleship_id = 2425
-# operation_id = 3737
-# mousetrap_id = 2679
-# settlers_of_catan_id = 278
-# hungry_hungry_hippos_id = 5895
-# pictionary_id = 2281
-# uno_id = 2223
-# mille_bornes_id = 590
-# chutes_and_ladders_id = 5432
 
 
 # # monopoly #################################################
