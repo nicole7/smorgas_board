@@ -1,10 +1,30 @@
 nav {
+  position: fixed;
+  width: 100%;
   top: 0;
   right: 0;
-  height: 50px;
+  height: 25px;
 }
 
 nav a {
   float: right;
   padding-right: 20px;
 }
+
+.js--login {
+  float: right;
+  padding-right: 20px;
+}
+
+.js--register {
+  float: right;
+  padding-right: 20px;
+}
+
+.errors {
+  margin-top: 30px;
+  float: right;
+  list-style-type: none;
+}
+
+
