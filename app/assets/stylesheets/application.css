@@ -17,21 +17,39 @@
 body {
   margin: 40px;
   width: 79%;
+  background-image: url("http://www.publicdomainpictures.net/pictures/30000/velka/cork-board.jpg");
+}
+
+h1 {
+font-family: 'Luckiest Guy', cursive;
+color: #388c3f;
+font-size: 375%;
+letter-spacing: 2.5px;
+}
+
+.nav-bar {
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+    font-size: 150%;
 }
 
 .wrapper {
     display: grid;
     grid-gap: 10px;
-        background-color: #fff;
+        background-color: #e09704;
         color: #444;
+    padding: 0;
+    width: 80%;
     }
 
     .box {
-        background-color: #444;
+        background-color: #e09704;
         color: #fff;
+        border: solid white;
         border-radius: 5px;
         padding: 20px;
         font-size: 150%;
+        box-shadow: 7px 7px #b27b03;
     }
 
     .sidebar-box {
@@ -53,6 +71,8 @@ body {
         width: 88%;
         clear: both;
         margin-bottom: 10px;
+        font-family: 'Neucha', cursive;
+
     }
     #friends-info {
         grid-column: 3 ;

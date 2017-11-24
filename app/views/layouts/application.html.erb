@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
     <title>SmorgasBoard</title>
     <%= csrf_meta_tags %>
 
@@ -10,7 +12,7 @@
 
   <body>
 
-    <nav>
+    <nav class="nav-bar">
       <%= link_to "Home", root_path %>
       <% if current_user %>
       <!-- Remember to add a path here to user profile page. -->
