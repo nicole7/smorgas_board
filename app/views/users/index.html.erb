@@ -1,0 +1,8 @@
+<ul>
+  <% @users.each do |user| %>
+  <% unless user == current_user  %>
+    <li><%= link_to user.username, user_path(user) %> |
+      <%= render 'send_friend_request', user: user %>
+    <% end %></li>
+  <%end%>
+</ul>
