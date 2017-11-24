@@ -2,7 +2,8 @@
 
 <div class="wrapper">
   <ul>
-    <li><div class="box game-info">
+    <li>
+      <div class="box game-info">
       <% @games.each do |game| %>
         <%= link_to(game.name, game_path(game))%>
       <% end %>
