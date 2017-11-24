@@ -2,10 +2,17 @@
 
 <div class="wrapper">
   <ul>
+    <li><div class="box game-info">
+      <% @games.each do |game| %>
+        <%= link_to(game.name, game_path(game))%>
+      <% end %>
+
+
+
+
+ <!--    <li><div class="box game-info">Game info goes here</div></li>
     <li><div class="box game-info">Game info goes here</div></li>
-    <li><div class="box game-info">Game info goes here</div></li>
-    <li><div class="box game-info">Game info goes here</div></li>
-    <li><div class="box game-info">Game info goes here</div></li>
+    <li><div class="box game-info">Game info goes here</div></li> -->
   </ul>
 </div>
 
