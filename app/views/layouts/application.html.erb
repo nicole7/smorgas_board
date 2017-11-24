@@ -22,20 +22,19 @@
         <%= render './logged_out_links' %>
         <%= render 'shared/flash' if flash[:notice] %>
       <% end %>
-      <% if !logged_in? %>
+    </nav>
+
+    <% if !logged_in? %>
       <div class="sidebar-box">
       </div>
-      <% else %>
-      <div class="friends"> 
-        <h3><u>Pending requests:</u></h3>
+    <% else %>
+      <div class="friends">
+      <h3><u>Pending requests:</u></h3>
         <%= render "requests/received", @received %>
-        <h3><u>Sent Requests:</u></h3>
+      <h3><u>Sent Requests:</u></h3>
         <%= render "requests/sent", @sent %>
-      </div>
-      <% end %>
-
-
-    </nav>
+    </div>
+   <% end %>
 
     <%= yield %>
   </body>
