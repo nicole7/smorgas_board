@@ -1,0 +1,18 @@
+<ul class="show_requests">
+  <% if @received %>
+    <% @received.each do |request| %>
+
+      <li class="requests">
+
+        <h4 class="requester_info"> <%= link_to request.user.name, user_path(request.user) %> wants to be your friend.</h4>
+          <div class="btns">
+            <%= link_to 'Accept', friend_request_path(request.id), method: :patch, class: 'add_button' %>
+            <%= link_to 'Decline', friend_request_path(request.id), method: :delete, class: 'decline_button' %>
+          </div>
+        <% end %>
+  <% else %>
+      <li>You do not have any pending requests right now!</li>
+    <% end %>
+    </li>
+ </ul>
+
