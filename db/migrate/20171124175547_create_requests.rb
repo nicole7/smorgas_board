@@ -1,6 +1,6 @@
-class CreateFriendings < ActiveRecord::Migration[5.1]
+class CreateRequests < ActiveRecord::Migration[5.1]
   def change
-    create_table :friendings do |t|
+    create_table :requests do |t|
       t.integer :user_id
       t.integer :friend_id
 

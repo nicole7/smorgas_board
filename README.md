@@ -1,24 +1,38 @@
-# README
+# SmorgasBoard
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+*A heapin' helpin of board gamin' goodness!*
 
-* Ruby version
+[heroku link goes here]
 
-* System dependencies
+**Team SB:**
 
-* Configuration
+Zach Broaddus  
+Nicole Gasperini  
+Toby Ladislas  
+Elise Poplawski  
+Karlie Romas
 
-* Database creation
+**Clients:**  
+Deván Gamáble   
+Kristán
 
-* Database initialization
+SmorgasBoard is a site where board-game lovers can get the lowdown on all
+of their favorite games.
 
-* How to run the test suite
+## User Stories
 
-* Services (job queues, cache servers, search engines, etc.)
+-A user should be able to see a list of popular games with blurbs.  
+-A user should have a quick, hassle-free login experience.  
+-A user should have a username and a secure password.  
+-A user can favorite a game from the homepage.  
+-A user has a favorite games profile page.  
+-A user can have friends on the site.  
+-Only accepted friends can see a user's games profile page.  
+-A user should have visual feedback when they do a thing on the site.  
+-A user should be able to search our database of games.  
+-A user can see a 'friends' sidebar.  
 
-* Deployment instructions
+### Upcoming
 
-* ...
+-How to use our site's features!

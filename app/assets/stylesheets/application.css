@@ -34,6 +34,18 @@ body {
         font-size: 150%;
     }
 
+    .sidebar-box {
+        padding: 0;
+        background-image: url("http://i.imgur.com/y6QSZUml.jpg") ;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .sidebar-box img {
+        width: 100%;
+    }
+
     .game-info {
         /*grid-column: 1 / 3;*/
         /*grid-row: 1;*/

@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 
     if @user.save
       session[:user_id] = @user.id
+      flash[:notice] = "Registration successful!"
       if request.xhr?
         render :create
       else
@@ -28,6 +29,10 @@ class UsersController < ApplicationController
       @errors = @user.errors.full_messages
       render :new
     end
+  end
+
+  def show
+    @user = User.find_by(id: params[:id])
   end
 
   private
