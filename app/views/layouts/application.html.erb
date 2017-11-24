@@ -21,7 +21,10 @@
       <% else %>
         <%= render './logged_out_links' %>
       <% end %>
-      <div class="box" id="friends-info">Put friends info here if logged in. Else, default to something else...</div>
+      <% if !current_user %>
+      <div class="sidebar-box box" id="friends-info">
+      </div>
+      <% end %>
     </nav>
 
     <%= yield %>
