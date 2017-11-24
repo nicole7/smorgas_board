@@ -2,27 +2,7 @@ class Game < ApplicationRecord
   has_many :gamables
   has_many :users, through: :gamables
 
-  def get_api_response(keyword)
-    url = "https://www.boardgamegeek.com/xmlapi/search?search=#{keyword}"
 
-    response = Net::HTTP.get_response(URI.parse(url))
-    buffer = response.body
-    h = Hash.from_xml(buffer).to_json
-    result = JSON.parse(h)
-  end
-
-  # def assign_attributes(result)
-  #   name = result["boardgames"]["boardgame"]["name"] || keyword.capitalize
-  #   desc = result["boardgames"]["boardgame"]["description"]
-  #   cat = result["boardgames"]["boardgame"]["statistics"]["ratings"]["ranks"]["rank"][1]["type"]
-  #   min_players = result["boardgames"]["boardgame"]["minplayers"]
-  #   max_players = result["boardgames"]["boardgame"]["maxplayers"]
-  #   play_time = result["boardgames"]["boardgame"]["playingtime"]
-  #   year_pub = result["boardgames"]["boardgame"]["yearpublished"]
-  #   img = result["boardgames"]["boardgame"]["image"]
-
-  #   num_players = min_players + "-" + max_players
-  # end
 
 end
 
