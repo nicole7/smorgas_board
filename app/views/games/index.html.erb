@@ -3,7 +3,6 @@
 <div class="wrapper">
   <ul>
     <li>
-
       <% @games.each do |game| %>
     <div class="box game-info"><%= link_to(game.name, game_path(game))%></div></li>
       <% end %>
