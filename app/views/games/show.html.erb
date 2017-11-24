@@ -1,0 +1,11 @@
+<div class="container">
+  <h2><%= @game.name %></h2>
+  <%= image_tag(@game.image_url) %>
+  <p>Description:<%= @game.description %></p>
+  <p>Category:<%= @game.category %></p>
+  <p>Number of Players:<%= @game.player_num %></p>
+  <p>Playig Time:<%= @game.playing_time %></p>
+  <p>Year Created:<%= @game.year_created %></p>
+</div>
+
+<%= link_to "Delete", game_path, method: :delete, data: { confirm: 'Are you sure?' } %>
