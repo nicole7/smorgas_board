@@ -11,13 +11,7 @@ nav a {
   padding-right: 20px;
 }
 
-.js--login {
-  float: right;
-  padding-right: 20px;
-  display: inline;
-}
-
-.js--register {
+.js--login, .js--register {
   float: right;
   padding-right: 20px;
   display: inline;
@@ -26,7 +20,12 @@ nav a {
 .errors {
   display: inline;
   float: right;
-  margin-right: 25px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  padding-right: 20px;
+  margin-right: 20px;
+  text-align: center;
 }
 
 .notice {
