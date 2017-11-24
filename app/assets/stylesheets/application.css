@@ -18,7 +18,7 @@ body {
   margin: 40px;
 
   width: 79%;
-  background-image: url("http://www.publicdomainpictures.net/pictures/30000/velka/cork-board.jpg");
+  background-image: url("../corkboard.jpg");
 }
 
 h1 {
@@ -26,6 +26,7 @@ font-family: 'Luckiest Guy', cursive;
 color: #388c3f;
 font-size: 375%;
 letter-spacing: 2.5px;
+margin-top: 60px;
 }
 
 .nav-bar {
@@ -108,8 +109,4 @@ letter-spacing: 2.5px;
 
 ul {
     list-style: none;
-}
-
-h1 {
-    margin-top: 60px;
 }
