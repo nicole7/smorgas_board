@@ -20,6 +20,7 @@
 
       <% else %>
         <%= render './logged_out_links' %>
+        <%= render 'shared/flash' if flash[:notice] %>
       <% end %>
       <% if !logged_in? %>
       <div class="sidebar-box box" id="friends-info">

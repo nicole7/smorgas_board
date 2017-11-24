@@ -21,6 +21,7 @@ class SessionsController < ApplicationController
 
     if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
+      flash[:notice] = "Login successful!"
       if request.xhr?
         render :create
       else
@@ -35,6 +36,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
+    flash[:notice] = "Logout successful!"
     redirect_to root_path
   end
 

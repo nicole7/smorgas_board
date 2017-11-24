@@ -1,3 +1,5 @@
-$(".js--login-link").hide()
-$(".js--register-link").hide()
+$(".js--register").remove()
+$(".js--login-link").remove()
+$(".js--register-link").remove()
+$('nav').find('.errors').remove()
 $('nav').append('<%= j render("register") %>')
