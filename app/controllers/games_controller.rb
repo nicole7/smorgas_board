@@ -5,7 +5,16 @@ class GamesController < ApplicationController
   end
 
   def show
-    @game.find(params[:id])
+    @game = Game.find(params[:id])
+  end
+
+  def destroy
+    @game = Game.find(params[:id])
+    if @game.destroy
+      redirect_to game_path
+    else
+      render :show
+    end
   end
 
 end
