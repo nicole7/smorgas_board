@@ -18,11 +18,9 @@
       <% else %>
         <%= render './logged_out_links' %>
       <% end %>
+      <div class="box" id="friends-info">Put friends info here if logged in. Else, default to something else...</div>
     </nav>
 
-<!--     <div class="wrapper">
-      <div class="box b">B</div>
-    </div> -->
     <%= yield %>
   </body>
 </html>
