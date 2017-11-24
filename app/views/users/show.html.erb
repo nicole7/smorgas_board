@@ -1,5 +1,24 @@
 <h1>Hi <%= @user.username %></h1>
 
+
+
+
+
 <div class="adding_friends">
-  
+  <% unless @user == current_user  %>
+    <%= render 'send_friend_request', user: @user %>
+  <% end %>
 </div>
+
+
+
+
+
+<ul>
+<% @users.each do |user| %>
+  
+  <li><%=user.username%></li>
+
+
+</ul>
+<% end %>

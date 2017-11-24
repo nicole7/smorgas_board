@@ -23,10 +23,14 @@
         <%= render 'shared/flash' if flash[:notice] %>
       <% end %>
       <% if !logged_in? %>
-      <div class="sidebar-box box" id="friends-info">
+      <div class="sidebar-box">
       </div>
       <% else %>
-      <div class="box" id="friends-info"> Where friend list goes
+      <div class="friends"> 
+        <h3><u>Pending requests:</u></h3>
+        <%= render "requests/received", @received %>
+        <h3><u>Sent Requests:</u></h3>
+        <%= render "requests/sent", @sent %>
       </div>
       <% end %>
 

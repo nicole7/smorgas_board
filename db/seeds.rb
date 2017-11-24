@@ -35,3 +35,8 @@ pictionary_id =
 uno_id =
 mille_bournes_id =
 chutes_and_ladders_id =
+
+
+10.times do 
+  User.create!(username: Faker::LeagueOfLegends.champion, password: "password")
+end

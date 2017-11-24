@@ -1,0 +1,7 @@
+<% if current_user.pending_friends.include?(user) || user.pending_friends.include?(current_user) %>
+  <button class="btn">Friend request sent</button>
+<% elsif user.friends.include?(current_user) %>
+  <h4 class="text-info">You are friends!</h4>
+<% else %>
+  <%= link_to 'Send friend request', requests_path(friend_id: user.id), method: :post, class: 'btn' %>
+<% end %>

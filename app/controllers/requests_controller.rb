@@ -1,6 +1,6 @@
 class RequestsController < ApplicationController
 
-  before_action :set_friend_request, except: %i[index create]
+  before_action :set_friend_request, except: [:index, :create]
 
   def index
     @received = Request.where(friend: current_user)
