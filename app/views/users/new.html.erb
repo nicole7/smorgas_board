@@ -1,24 +1,3 @@
 <h1>Registration</h1>
 
-  <% if @errors %>
-    <%= render 'shared/errors' %>
-  <% end %>
-
-  <%= form_with model: @user, local: true do |f| %>
-
-  <p>
-    <%= f.label "Username"  %><br>
-    <%= f.text_field :username  %>
-  </p>
-
-  <p>
-    <%= f.label "Password"  %><br>
-    <%= f.password_field :password  %>
-  </p>
-
-  <p>
-    <%= f.submit %>
-  </p>
-
-
-  <% end %>
+<%= render 'register' %>
