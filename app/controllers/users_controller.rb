@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  include SessionsHelper
   def index 
     @users = User.all.order(:username)
   end
@@ -37,6 +38,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by(id: params[:id])
     @users = User.all
+    @friend_ids = current_user.requests.pluck(:id)
   end
 
   private
