@@ -24,7 +24,15 @@ body {
 h1 {
 font-family: 'Luckiest Guy', cursive;
 color: #388c3f;
-font-size: 375%;
+font-size: 400%;
+letter-spacing: 2.5px;
+margin-top: 60px;
+}
+
+h2 {
+font-family: 'Luckiest Guy', cursive;
+color: #388c3f;
+font-size: 275%;
 letter-spacing: 2.5px;
 margin-top: 60px;
 }
@@ -33,6 +41,10 @@ margin-top: 60px;
     font-family: 'Neucha', cursive;
     font-weight: bold;
     font-size: 150%;
+}
+
+.description {
+    max-width: 75ch;
 }
 
 .wrapper {
@@ -69,6 +81,15 @@ margin-top: 60px;
 
 .sidebar-box img {
     width: 100%;
+}
+
+.game_info {
+    background-color: #e09704;
+}
+
+.image {
+    width: 30px;
+
 }
 
 .friends {

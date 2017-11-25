@@ -1,7 +1,7 @@
-<div class="container">
-  <h2><%= @game.name %></h2>
-  <%= image_tag(@game.image_url)  %>
-  <p>Description:<%= @game.description %></p>
+  <h2><u><%= @game.name %></u></h2>
+  <div class="container game_info">
+  <center><%= image_tag(@game.image_url, size: "520x360") %></center>
+  <p>Description:<%= raw @game.description %></p>
   <p>Category:<%= @game.category %></p>
   <p>Number of Players:<%= @game.player_num %></p>
   <p>Playig Time:<%= @game.playing_time %></p>

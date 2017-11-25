@@ -1,12 +1,15 @@
-<h1>Main Games Page</h1>
+<h1>SmorgasBoard</h1>
+<h2>A Heapin' Helpin of board gamin' goodness</h2>
 
 <div class="wrapper">
   <ul>
     <li>
       <% @games.each do |game| %>
-    <div class="box game-info"><%= link_to(game.name, game_path(game))%></div></li>
+    <div class="box game-info"><%= image_tag(game.image_url, size: "320x240") %><br><center><%= link_to(game.name, game_path(game))%><br><%= raw truncate(game.description, length:140) %></p></center></div></li>
       <% end %>
 
   </ul>
 </div>
+
+
 
