@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
       f.html
     end
 
-    @user = User.find_by(params[:email])
+    @user = User.find_by(username: params[:username])
 
     if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id

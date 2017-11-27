@@ -2,10 +2,6 @@ class GamesController < ApplicationController
 include SessionsHelper
   def index
     @games = Game.all
-    @friend_ids = current_user.requests.pluck(:id)
-    p "******"
-    p @friend_ids
-    p "******"
   end
 
   def show
