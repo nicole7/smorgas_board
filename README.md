@@ -1,6 +1,9 @@
 # SmorgasBoard
 
 
+****This is a pair programming project - because I acquired my mac from another student, my alias sometimes comes up as "matthew-black". I have since changed this****
+
+
 *A heapin' helpin of board gamin' goodness!*
 
 [heroku link goes here]
